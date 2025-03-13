@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+
+\usepackage{hcmus-report-template}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{hyperref}
+
+% Disable indentation on new paragraphs
+\setlength{\parindent}{0pt}
+
+% Line spacing 1.5
+\renewcommand{\baselinestretch}{1.5}
+
+% Optional: graphic path
+% \graphicspath{PATH_TO_GRAPHIC_FOLDER}
+
+% To use Times font family, uncomment this row
+% \usepackage{mathptmx}
+
+% To use roman section / subsection, uncomment these rows
+% \renewcommand{\thesection}{\Roman{section}}
+% \renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+
+% Define course name, report name and report title.
+\newcommand{\coursename}{Xử lý ảnh và video số}
+\newcommand{\reportname}{THỰC HÀNH VỚI YOLO}
+\newcommand{\reporttitle}{Báo cáo bài thực hành 4}
+
+\newcommand{\studentname}{Lê Châu Hữu Thọ (22120350)}
+\newcommand{\teachername}{Thầy Lý Quốc Ngọc \\Thầy Phạm Minh Hoàng\\Thầy Nguyễn Mạnh Hùng\\Thầy Phạm Thanh Tùng}
+
+% Header
+\lhead{\reporttitle}
+\rhead{
+Trường Đại học Khoa học Tự nhiên - ĐHQG HCM\\
+\coursename
+}
+
+
+
+% ============ DOCUMENT ============
+\begin{document}
+
+\pagenumbering{roman}
+\input{content/title.tex}
+
+\tableofcontents
+\pagebreak
+\listoftables
+\pagebreak
+\listoffigures
+\pagebreak
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{content/work}
+\input{content/intro}
+\input{content/dataset}
+\input{content/model}
+\input{content/eval}
+\input{content/cite}
+
+% References
+% \input{ref/ref.tex}
+
+% % Appendix
+% \appendix
+% % Add \cleardoublepage to move appendices to next page.
+% \input{appendix/appendix.tex}
+\end{document}
